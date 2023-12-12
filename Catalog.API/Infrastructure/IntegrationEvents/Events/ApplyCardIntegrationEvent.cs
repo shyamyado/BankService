@@ -7,12 +7,14 @@ namespace Catalog.API.Infrastructure.IntegrationEvents.Events
         public int ItemId { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
+        public string Phone { get; set; }
 
         public ApplyCardIntegrationEvent(ApplicationForm item)
         {
             ItemId = item.ItemId;
             Name = item.Name;
             Email = item.Email;
+            Phone = item.Phone;
         }
     }
 }
